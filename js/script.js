@@ -22,3 +22,5 @@ String.prototype.checkAndConcat = function (a, ...args){
 
 "Salut".checkAndConcat("Salut","toto","tata","tutu","blabla","heyhey");
 "Hello".checkAndConcat("Salut","toto","tata","tutu","blabla","heyhey");
+
+"Bonjour".checkAndConcat("Bonjour","toto","tata","tutu","blabla","heyhey");
