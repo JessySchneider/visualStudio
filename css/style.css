@@ -1,5 +1,6 @@
 h1{
-    color:red;
-    background-color: black;
-    align-self: auto;
+    background-color:lightblue;
+    text-align: center;
+    padding:10px;
+    margin-top: inherit;
 }
