@@ -4,14 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
+    <div id="message"></div>
     <form id="myform" action="">
-        <input type="text" id="myM">
-        <input id="sendM" type="submit">
-        <div id="message"></div>
+        <input type="text" id="text">
+        <button id="sendM" >Envoyer message</button>
+        <input type="url" id="audio">       
+        <button id="sendAudio" >Envoyer audio</button>
+        <input type="url" id="video">       
+        <button id="sendVideo" >Envoyer video</button>
+        <!-- <button id="prendre-photo" >Photo</button> -->
     </form>
+    <!-- <video controls id="camera" width="300px"></video>
+    <img id="photo" src="" alt=""  width="300px"> -->
+    <script  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
     <script src="js/wbsocket.js"></script>
 </body>
 </html>
