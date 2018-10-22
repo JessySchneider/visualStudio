@@ -1,0 +1,66 @@
+header, main,footer{
+    display: flex;
+    width: 100%;
+    border:1px solid black;
+}
+
+
+.logo{
+    width: 20%;
+    background-color: lightcoral;
+    position: relative;
+    top:20px;
+    left:20px;
+    z-index: 2;
+}
+
+.logo img{
+   max-height:300px;
+   width: 100%;
+}
+
+h1{
+    width: 80%;
+    margin-left:20px;
+    align-self: center;
+}
+
+.menu{
+    width: 25%;
+    height:300px;
+    background-color:lightsalmon;
+    position:relative;
+}
+
+.menu .contact p{
+    bottom:5px;
+    position: absolute;
+    margin: inherit;
+    text-align: center;
+    width: 100%;
+}
+
+.content{
+    width: 75%;
+    background-color:lightgreen;
+    position:relative;
+}
+
+.content p {
+    padding: 10px;
+}
+
+.content img{
+    width: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+footer{
+    background-color: lightskyblue;
+    height:50px;
+}
+    
+
+
