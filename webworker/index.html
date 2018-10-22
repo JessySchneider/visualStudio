@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="" id="nb">
+    <div class="resultat"></div>
+    <script>
+        var myWorker = new Worker("js/webworker.js");
+        var targetDom = document.querySelector('#nb');
+        var targetDomMsg = document.querySelector(".resultat");
+
+        targetDom.onchange = function() {
+            myWorker.postMessage([targetDom.value]);
+            console.log('Message posted to worker');
+        }
+
+        myWorker.onmessage = function(e){
+            targetDomMsg.textContent = e.data;
+		    console.log('Message received from worker');
+        }
+  
+    </script>
+</body>
+</html>
